@@ -317,7 +317,7 @@ ul.new-news>li {
     display:flex;
     align-items: center;
     text-align: center;
-    border:2px solid lightslategray
+    border:2px solid lightblue;
 
 }
 .ads > div
@@ -482,7 +482,7 @@ aside
 footer
 {
     text-align: center;
-    background: linear-gradient(#151515,#301B3F,#3C415C,#B4A5A5 );
+    background: linear-gradient(#1B262C  ,#0F4C75,#3282B8,#BBE1FA );
     color:white;
 }
 footer > p
@@ -495,7 +495,7 @@ a#gototop
     text-decoration: none;
     display:block;
     padding: 10px 20px;
-    background:linear-gradient(#DBD8E3,#5C5470,#352F44  ,#2A2438);
+    background:linear-gradient(#142850,#27496D,#0C7B93  ,#00A8CC);
     color :white;
     position: fixed;
     right:15px;
