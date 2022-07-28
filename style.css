@@ -317,7 +317,6 @@ ul.new-news>li {
     display:flex;
     align-items: center;
     text-align: center;
-    border:2px solid lightblue;
 
 }
 .ads > div
@@ -562,6 +561,22 @@ a#gototop
         flex-wrap: wrap ;
     }
  
+    .ads-picture
+    {
+        width: 100%;
+        margin:0 auto
+     
+    }
+    .ads > section
+    {
+        width: 100%;
+    }
+    .ads
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
 }
 
 /*RESPONSIVE PHONE*/
@@ -621,23 +636,24 @@ a#gototop
     {
         text-align: left;
     }
-    .ads-picture
-    {
-        width: 0%
-     
-    }
-    .ads > section
-    {
-        width: 100%;
-    }
-    .ads
-    {
-        flex-wrap: wrap;
-        justify-content: center ;
-    }
+  
     .social-links
     {
         font-size: 1rem;
+    }
+    .e-sports
+    {
+        width: 100%;
+    }
+    .MOVIES
+    {
+        width: 100%;
+    }
+    .news-section
+    {
+        display:flex;
+        flex-wrap: wrap;
+        text-align: center;
     }
  
   
