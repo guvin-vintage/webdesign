@@ -117,6 +117,35 @@ function init()
             dogemoney.appendChild(dogemoneyy);
 
 }
+    function checkMail()
+    {
+        
+           var form=document.getElementById("form");
+           var email=document.getElementById("email").value;
+           var text=document.getElementById("text");
+           var reg= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if(email.match(reg))
+            {
+             
+                form.classList.add("valid")
+                form.classList.remove("invalid")
+                text.innerHTML="Thank you for your subscribing"
+                text.style.color="#00ff00";
+
+
+            }
+            else
+            {
+                form.classList.remove("valid")
+                form.classList.remove("invalid")
+                text.innerHTML="Please enter your email correctly"
+                text.style.color="#ff0000";
+
+            }
+                
+
+        
+    }
 
 
                     $(document).ready(function()
@@ -136,6 +165,7 @@ function init()
                             },1000)
                         })
                     })
+            
 
                    
              
