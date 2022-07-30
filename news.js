@@ -127,8 +127,7 @@ function init()
             if(email.match(reg))
             {
              
-                form.classList.add("valid")
-                form.classList.remove("invalid")
+          
                 text.innerHTML="Thank you for your subscribing"
                 text.style.color="#00ff00";
 
@@ -136,8 +135,7 @@ function init()
             }
             else
             {
-                form.classList.remove("valid")
-                form.classList.remove("invalid")
+              
                 text.innerHTML="Please enter your email correctly"
                 text.style.color="#ff0000";
 
