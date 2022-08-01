@@ -82,40 +82,8 @@ function init()
     }
 
 
-  
-            var bitcoin = document.getElementById("bitcoin");
-            var bitcoinmoney = document.getElementById("bitcoinmoney")
-            var ran1=Math.random()
-            var ran2=Math.random()*900 
-        
-            var btc=document.createTextNode(ran1.toFixed(2));
-            var btcmoney=document.createTextNode(ran2.toFixed(2));
-            bitcoin.appendChild(btc);
-            bitcoinmoney.appendChild(btcmoney);
-        
-            
-      
-   
-            var et = document.getElementById("et");
-            var etmoney= document.getElementById("etmoney")
-            var ran3=Math.random()
-            var ran4=Math.random() * 200
-            var eth= document.createTextNode(ran3.toFixed(2))
-            var ethmoney = document.createTextNode(ran4.toFixed(2))
-            et.appendChild(eth)
-            etmoney.appendChild(ethmoney);
-            
 
-            var dog = document.getElementById("dog");
-            var dogemoney=document.getElementById("dogmoney")
-            var ran5 = Math.random();
-            var ran6 = Math.random() * 100;
-
-            var doge=document.createTextNode(ran5.toFixed(2))
-            var dogemoneyy=document.createTextNode(ran6.toFixed(2))
-            dog.appendChild(doge);
-            dogemoney.appendChild(dogemoneyy);
-
+           
 }
     function checkMail()
     {
@@ -162,6 +130,27 @@ function init()
                                 scrollTop:0
                             },1000)
                         })
+
+                        $(window).scroll(function(){
+                
+                                var ran1=Math.random()
+                                var ran2=Math.random()
+                                var ran3=Math.random()
+                                $("#bitcoin").html(ran1.toPrecision(2))
+                                $("#et").html(ran2.toPrecision(2))
+                                $("#dog").html(ran3.toPrecision(2))
+    
+                                var ran4=Math.random()*100;
+                                var ran5=Math.random()*100;
+                                var ran6=Math.random()*100;
+                                $("#bitcoinmoney").html(ran4.toPrecision(2))
+                                $("#etmoney").html(ran5.toPrecision(2))
+                                $("#dogmoney").html(ran6.toPrecision(2))
+                            
+                           
+                        })
+
+
 
                         
                     })
