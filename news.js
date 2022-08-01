@@ -9,11 +9,12 @@ function init()
     var year = today.getFullYear();
 
     var n = (day +2*month +(3*(month+1))/5 + year +(year /4)) % 7
-    Math.round(n);
-    n = parseInt(n);
-    if(n==7 || n==0)
+    n=Math.round(n);
+    alert(n);
+        n = parseInt(n);
+        if(n==7 || n==0)
         n='Saturday'
-    if(n== 1)
+        if(n== 1)
         n='Sunday'
         else if(n==2)
         n='Monday'
