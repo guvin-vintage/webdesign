@@ -143,6 +143,30 @@ $(document).ready(function () {
 
     })
 
+    $("#btn2").click(function() {
+        $("#btn1").css({
+            "background-color":"transparent"
+        })
+        $(this).css({
+            "background-color":"blue"
+        })
+        $(".main-card").css({
+            "left":"-100%"
+            
+        })
+
+    })
+    $("#btn1").click(function( ){
+        $("#btn2").css({
+            "background-color":"transparent"
+        })
+        $(this).css({
+            "background-color":"blue"
+        })
+        $(".main-card").css({
+            "left":"0"
+        })
+    })
 
 
 

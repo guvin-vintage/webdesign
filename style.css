@@ -321,7 +321,7 @@ ul.new-news>li {
 }
 .ads > div
 {
-    max-width: 50%;
+    width: 50%;
     margin-left : 0 auto;
 
 }
@@ -510,9 +510,125 @@ a#gototop
     border-radius: 5px;
 }
 
+/*CARD*/
+.img 
+{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #FF5D5D;
 
 
+}
+.img > img 
+{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+    padding: 2px;
+    border: 3px solid white;
 
+}
+.name 
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.country
+{
+    font-size: 20px;
+    color:springgreen;
+}
+.media-icons
+{
+    display:flex;
+    margin-top: 10px;
+}
+.media-icons a 
+{
+    color:#fff;
+    height: 35px;
+    width: 35px;
+    background-color: hotpink;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    border: 2px solid transparent;
+
+
+}
+.media-icons a:hover 
+{
+    border-color:#ff676d;
+    color:#ff676d;
+}
+.content 
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.containers
+{
+    height: 22rem;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    position: relative;
+}
+.container
+{
+    max-width: 950px;
+    width: 100%;
+    padding: 20px 20px;
+    overflow-x: hidden;
+
+}
+.cards 
+{
+    display:flex;
+    justify-content:space-between;
+    display:flex;
+    width: calc(100% / 2px);
+}
+.card 
+{
+    background-color: #fff;
+    width: calc(100% / 3 - 10px);
+    border-radius: 24px;
+    padding: 30px;
+}
+.main-card 
+{
+    width: 200%;
+    display:flex;
+    justify-content: space-evenly;
+    position: relative;
+    transition: 2s ease;
+}
+.btn 
+{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+   
+}
+.btn button
+{
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
 
 
 
@@ -568,12 +684,7 @@ a#gototop
         flex-wrap: wrap ;
     }
  
-    .ads-picture
-    {
-        width: 100%;
-        margin:0 auto
-     
-    }
+    
     .ads > section
     {
         width: 100%;
@@ -662,8 +773,34 @@ a#gototop
         flex-wrap: wrap;
         text-align: center;
     }
- 
-  
+    .ads > div 
+    {
+        width: 100%;
+    }
+    .card
+    {
+        width: 100%;
+        margin: 10px;
+    }
+    .cards
+    {
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    .main-card
+    {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .containers
+    {
+        height: 120rem;
+    }
+    .btn
+    {
+        display:none;
+    }
 }
 @media screen and (max-width:360px)
 {
