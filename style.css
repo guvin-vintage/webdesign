@@ -241,9 +241,12 @@ li.sub-content>a {
 
 .money {
     width: 25%;
-    top: 2rem;
-    right: 2rem;
     position: absolute;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    right:2rem;
+
 }
 
 .money h3 {
@@ -661,6 +664,9 @@ a#gototop
     position: absolute;
     bottom: 0;
     margin-bottom: 5px;
+    left: 45rem;
+    margin: 0 auto;
+
    
 }
 .btn button
@@ -668,8 +674,12 @@ a#gototop
     border-radius: 50%;
     height: 15px;
     width: 15px;
+    margin: 5px auto;
 }
-
+.active 
+{
+    background-color: blue;
+}
 
 
 

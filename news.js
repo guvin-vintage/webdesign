@@ -123,25 +123,8 @@ $(document).ready(function () {
             scrollTop: 0
         }, 1000)
     })
-
-    $(window).scroll(function () {
-
-        var ran1 = Math.random()
-        var ran2 = Math.random()
-        var ran3 = Math.random()
-        $("#bitcoin").html(ran1.toPrecision(2))
-        $("#et").html(ran2.toPrecision(2))
-        $("#dog").html(ran3.toPrecision(2))
-
-        var ran4 = Math.random() * 100;
-        var ran5 = Math.random() * 100;
-        var ran6 = Math.random() * 100;
-        $("#bitcoinmoney").html(ran4.toPrecision(2))
-        $("#etmoney").html(ran5.toPrecision(2))
-        $("#dogmoney").html(ran6.toPrecision(2))
-
-
-    })
+    
+   
 
     $("#btn2").click(function() {
         $("#btn1").css({
@@ -167,7 +150,7 @@ $(document).ready(function () {
             "left":"0"
         })
     })
-
+   
     
 
     wow = new WOW(
@@ -180,6 +163,60 @@ $(document).ready(function () {
       }
       )
       wow.init();
+
+      var bitcoin=null;
+      var et=null;
+      var dog=null;
+      var bitcoinmoney = $("#bitcoinmoney")
+      var etmoney = $("#etmoney")
+      var dogmoney = $("#dogmoney")
+      bitcoin=start1(etmoney,100,90000,"bitcoin")
+      et=start1(dogmoney,50,9000,"et")
+      dog=start2(bitcoinmoney,100,10000,"dog")
+
+      function start1(el,steps,max,type) {
+        return setInterval(function() {
+            let value=parseInt(el.text());
+            if(value < max)
+            {
+                value+=steps;
+                el.html(value);
+            }
+            else 
+            {
+                if(type==="etmoney")
+                {
+                    clearInterval(etmoney);
+                }
+                else 
+                {
+                    if(type==="dog")
+                    clearInterval(dogmoney);
+                }
+            }
+
+
+        },5000)
+      }
+
+      function start2(el,steps,min) {
+        return setInterval(function () {
+            var value=parseInt(el.text())
+            if(value > min)
+            {
+                value -=steps;
+                el.html(value);
+            }
+            else 
+            {
+                if(type===bitcoinmoney)
+                {
+                    clearInterval(bitcoin);
+                }
+            }
+            console.log(Math.random())
+        },5000)
+      }
 
 
 
