@@ -78,6 +78,7 @@ div.icon {
 .search-menu
 {
     display:flex;
+    cursor: pointer;
     
 }
 .search-menu > li > a 
