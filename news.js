@@ -78,7 +78,7 @@ function init() {
 
     }
 
-
+  
 
 
 }
@@ -105,6 +105,23 @@ function checkMail() {
 
 
 
+}
+
+function searchfunc() {
+    let search=document.querySelector(".search-box-input")
+    let menuitems= document.querySelectorAll(".menu-item")
+    search.value=search.value.toLowerCase();
+    /*Ẩn đi và hiện lại khi search*/
+    menuitems.forEach(function(el) {
+        let text=el.innerHTML;
+        if(text.indexOf(search.value)>-1)
+        {
+            el.style.display="";
+            
+        }
+        else 
+            el.style.display="none";
+    })
 }
 
 
@@ -219,6 +236,16 @@ $(document).ready(function () {
       }
 
 
+      /*SEARCH*/
+      $(".search-box-input").hide();
+      $(".search-menu").hide();
+
+      $(".search-box-btn").click(function() {
+        $(".search-box-input").show("slow");
+        $(".search-menu").show()
+      })
+
+  
 
 })
 

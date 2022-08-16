@@ -49,6 +49,45 @@ div.icon {
 
 }
 
+.search-box
+{
+    height: 28px;
+    width: 285px;
+    display:flex;
+    position: absolute;
+    top:3rem;
+    right:0rem;
+    flex-wrap: wrap;
+   
+}
+
+.search-box-input
+{
+    height: 100%;
+    width: 85%;
+    transition: all 2s ease;
+
+}
+
+
+.search-box-btn
+{
+    height: 100%;
+    width: 15%;
+}
+.search-menu
+{
+    display:flex;
+    
+}
+.search-menu > li > a 
+{
+    color:white;
+    padding:4px;
+}
+
+
+
 div.icon>a {
     font-size: 1.5rem;
     padding: 1rem;
@@ -750,6 +789,18 @@ a#gototop
 /*RESPONSIVE PHONE*/
 @media screen and (max-width:550px) 
 {
+    .search-box
+{
+    width: 180px;
+    height: 20px;
+    top:2rem;
+
+}
+.search-menu > li > a 
+{
+    font-size: 10px;
+    padding: 4px;
+}
     span.breaking {
         font-size: 8px;
     }
