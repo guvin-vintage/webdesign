@@ -48,43 +48,35 @@ div.icon {
     margin-top: 5px;
 
 }
-
-.search-box
+/*SEARCH*/
+.search-boxes
 {
-    height: 28px;
-    width: 285px;
-    display:flex;
-    position: absolute;
-    top:3rem;
-    right:0rem;
-    flex-wrap: wrap;
-   
+   display:flex;
+   justify-content:right;
 }
-
-.search-box-input
+.box 
 {
-    height: 100%;
-    width: 85%;
-    transition: all 2s ease;
-
-}
-
-
-.search-box-btn
-{
-    height: 100%;
-    width: 15%;
-}
-.search-menu
-{
+    height: 30px;
     display:flex;
     cursor: pointer;
-    
+    padding: 10px 20px;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgb(0,0,0,0.3);
 }
-.search-menu > li > a 
+.box:hover .input 
 {
-    color:white;
-    padding:4px;
+    width: 200px;
+}
+.box .input 
+{
+    width: 0;
+    outline: none;
+    border: none;
+    transition: 0.8s ease;
+    background: transparent;
+
 }
 
 
