@@ -895,6 +895,29 @@ a#gototop
     {
         display:none;
     }
+    .footer-content
+    {
+        flex-wrap: wrap;
+    }
+    .footer-content > ul
+    {
+        width: 30%;
+    }
+    .footer-content > ul:last-child
+    {
+        border-right: 2px solid white;
+    }
+    .terms 
+    {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .terms p 
+    {
+        width: 35%;
+    }
+    
 }
 @media screen and (max-width:360px)
 {
