@@ -18,18 +18,9 @@ ul {
 header {
     background-color: black;
     position: relative;
+    
 }
 
-div.website-header {
-    display: flex;
-    align-items: center;
-}
-
-div.website-header>h1 {
-    color: white;
-    font-family: Teko;
-    font-size: 2.5rem;
-}
 
 div.logo {
     width: 10%;
@@ -38,7 +29,7 @@ div.logo {
 div.logo>img {
     width: 100%;
     margin-top: 10px;
-    margin-left: 4.3rem;
+    margin-left: 3rem;
 }
 
 div.icon {
