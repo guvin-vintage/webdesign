@@ -42,7 +42,6 @@ div.icon {
 /*SEARCH*/
 .search-boxes
 {
-  display:inline-block;
    position: absolute;
    bottom: 0;
    right: 0;
@@ -53,12 +52,11 @@ div.icon {
 {
     height: 30px;
     display:flex;
+    align-items: center;
     cursor: pointer;
     padding: 10px 20px;
     background: white;
     border-radius: 30px;
-    align-items: center;
-    box-shadow: 0 10px 25px rgb(0,0,0,0.3);
 
 }
  
@@ -76,7 +74,6 @@ div.icon {
 {
     background-color: white;
     margin: 0;
-    bottom: 0;
     width: 100%;
     border-radius: 5px;
 
@@ -679,9 +676,8 @@ a#gototop
 .container
 {
     max-width: 950px;
-    width: 100%;
     padding: 20px 20px;
-    overflow-x: hidden;
+    overflow: hidden;
 
 }
 .cards 
@@ -689,7 +685,7 @@ a#gototop
     display:flex;
     justify-content:space-between;
     display:flex;
-    width: calc(100% / 2px);
+    width: calc(100% / 2 - 20px);
 }
 .card 
 {
@@ -711,7 +707,6 @@ a#gototop
     position: absolute;
     bottom: 0;
     margin-bottom: 5px;
-    left: 45rem;
     margin: 0 auto;
 
    
