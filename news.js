@@ -1,5 +1,6 @@
 function init() {
 
+
     var months
     var today = new Date();
 
@@ -258,6 +259,17 @@ $(document).ready(function () {
 
     }
   })
+
+  /*LOAD*/
+  window.addEventListener("load",function() {
+    var loader = document.querySelector(".loading")
+    this.setTimeout(function() {
+        setTimeout(function () {
+            loader.style="display:none;"
+        },1000)
+    },1000)
+  })
+  
 
 })
 
